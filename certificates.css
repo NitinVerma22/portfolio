@@ -1,0 +1,97 @@
+
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    header{
+        height: 10vh;
+        width: 100vw;
+        background-color: rgb(18, 17, 36);
+        color: white;
+        /* position: fixed; */
+    }
+     body{
+        background-color: rgb(11, 34, 42);
+     } 
+    nav{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        display: inline-flex;
+        width: 30%;
+        height: 35px;
+        color: white;
+        /* border: solid 2px  red; */
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .navbar{
+        display: inline-flex;
+        width: 60%;
+        background: transparent;
+        height: 6vh;
+        /* border: solid 2px  green; */
+        font-size: 25px;
+        justify-content: flex-end;
+        transition: .3s;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+    }
+    .navbar a:hover{
+        color: aqua;
+        text-shadow: 20px;
+        font-weight: 800;
+        /* margin-top: 10vh; */
+    }
+    .headinng{
+        margin-top: 5vh;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 700;
+        color: aqua;
+        /* margin-top: 15vh; */
+    }
+.certificates{
+    height: 280px;
+    width: 380px;
+    /* background-color: aqua; */
+    margin-top: 10px;
+    margin-left: 35px;
+    float: left;
+}
+.image{
+    height: 230px;
+    width: 380px;
+    background-color: burlywood;
+}
+.link{
+    height:50px;
+    width: 380px;
+    /* background-color: aliceblue; */
+}
+.img1{
+    background-image: url(/img/certificate.png);
+    background-size: cover;
+}
+.link a button{
+    background-color: rgb(1, 97, 97);
+    color: black;
+    padding: 5px;
+    margin-top: 8px;
+    margin-left: 35%;
+    border-radius: 10%;
+}

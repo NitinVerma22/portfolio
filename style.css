@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(18, 17, 36);
+    color: white;
+    position: fixed;
+}
+ body{
+    background-color: rgb(11, 34, 42);
+ } 
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    display: inline-flex;
+    width: 30%;
+    height: 35px;
+    color: white;
+    /* border: solid 2px  red; */
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar{
+    display: inline-flex;
+    width: 60%;
+    background: transparent;
+    height: 6vh;
+    /* border: solid 2px  green; */
+    font-size: 25px;
+    justify-content: flex-end;
+    transition: .3s;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.navbar a:hover{
+    color: aqua;
+    text-shadow: 20px;
+    font-weight: 800;
+}
+main{
+    /* background-color: rgb(11, 34, 42); */
+    height: 90vh;
+}
+.home{
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+    /* border: solid 2px red; */
+    /* position: relative; */
+    align-items: center;
+    background-color: rgb(11, 34, 42);
+}
+.info{
+    height: 40vh;
+    width: 40%;
+    /* border: solid 2px rgb(0, 255, 110); */
+}
+.profile{
+    height:60vh;
+    width: 30%;
+    margin-left: 8vw;
+    animation: bounce 2s;
+    transform: translateY(0px);
+    position: relative;
+    animation-iteration-count: infinite;
+animation-timing-function: linear;
+    /* border: solid 2px rgb(0, 8, 255); */
+}
+@keyframes bounce {
+    0%{
+        top:0px;
+
+    }
+25%{
+    top: 10px;
+}
+50%{
+    top: 40px;
+
+}
+75%{
+    top: 10px;
+}
+100%{
+    top:0px;
+
+}
+}
+.profile-photo{
+   height: 330px;
+   width: 330px;
+   background-color: aqua;
+   border-radius: 50%; 
+   margin-left: 4vw;
+   margin-top: 12px;
+   /* border: 20px dashed rgb(1, 138, 1); */
+   box-shadow: 0px 0px 30px 10px rgb(7, 222, 222);
+   background-image: url(/img/profile.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.info p{
+    margin-top: 15px;
+}
+.info h1{
+    margin-top: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT','Times New Roman', Times, serif, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.info h3{
+    margin-top: 3px;
+    font-weight: 300;
+}
+
+  
+.moreabout{
+    border-radius: 15px;
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    /* margin-left: 40px; */
+    margin-top: 15px;
+
+}
+.Skills{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(11, 34, 42);
+   /* border: solid 2px red; */
+}
+.heading{
+    /* border: solid 2px rgb(26, 255, 0); */
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: aqua;
+    margin-top: 15vh;
+}
+.headings{
+    height: 10vh;
+    width: 100%; 
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    /* border: solid 2px lawngreen; */
+}
+.skills-box{
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+    /* background-color: #f2f2f2; */
+}
+.technical{
+    height: 90%;
+    width: 45%;
+    display: inline-flex;
+    flex-direction:column;
+    margin-left: 3vw;
+}
+.softSkils{
+    height: 90%;
+    width: 45%;
+    display: inline-flex;
+    flex-direction:column;
+    margin-left: 3vw;
+}
+.box{
+    height: 80%;
+    width: 100%;
+}
+.box2{
+    height: 80%;
+    width: 100%;
+    color: black;
+}
+/* skills css */
+
+.skills-section {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+
+.skill {
+    width: 53%;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    border-radius: 20px;
+    /* text-align: center; */
+    /* border: 1px solid #38f8e5; */
+    padding: 5px;
+    /* box-shadow: 0 0 10px rgba(48, 251, 237, 0.902); */
+    transition: transform 0.2s;
+    color: white;
+}
+.skill p{
+    display: block;
+    margin-block-start:0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+.skill:hover {
+   transform: scale(1.05);
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #f2f2f2;
+    width: 80%;
+    text-align: end;
+    border-radius: 10px;
+    /* position: relative; */
+}
+
+.percentage {
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 10px;
+    width: 0;
+    transition: width 1s;
+    animation: progress 2s ease-in-out 0.5s forwards;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--percentage);
+    }
+}
+.white{
+    color: white;
+    margin-right: 8px;
+}
+.projects{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 2vh;
+    background-color: rgb(11, 34, 42); 
+}
+.projects-box{
+    height: 39vh;
+    width: 28vw;
+    /* border: solid 2px red; */
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 3vw;
+    float: left;
+}
+.project-img{
+    height: 33vh;
+    width: 28vw;
+    /* border: solid 2px rgb(0, 255, 38); */
+  
+}
+.projects-box:hover{
+     transition-duration: 2s;
+    transform:scale(1.12);
+    box-shadow: 0px 0px 5px 5px rgb(7, 222, 222);
+
+    /* height: 39.5vh;
+    width: 28.5vw; */
+
+}
+.project-txt{
+    height: 6vh;
+    width: 28vw;
+    text-align: center;
+    /* border: solid 2px rgb(17, 0, 255); */
+    color: white;
+}
+.project1{
+    background-image: url(/img/serviceProvider.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project2{
+    background-image: url(/img/mux.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project3{
+    background-image: url(/img/textutils.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@property --progress-value {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 0;
+  }
+  @-webkit-keyframes html-progress {
+    to {
+      --progress-value: 92;
+    }
+  }
+  @keyframes html-progress {
+    to {
+      --progress-value: 92;
+    }
+  }
+  @-webkit-keyframes css-progress {
+    to {
+      --progress-value: 87;
+    }
+  }
+  @keyframes css-progress {
+    to {
+      --progress-value: 87;
+    }
+  }
+  @-webkit-keyframes js-progress {
+    to {
+      --progress-value: 73;
+    }
+  }
+  @keyframes js-progress {
+    to {
+      --progress-value: 73;
+    }
+  }
+  .progress-bar2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* to center the percentage value */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress-bar2::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) "%";
+  }
+  
+  .html {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(hotpink calc(var(--progress-value) * 1%), rgb(192, 227, 255) 0);
+    -webkit-animation: html-progress 2s 1 forwards;
+            animation: html-progress 2s 1 forwards;
+  }
+  
+  .html::before {
+    -webkit-animation: html-progress 2s 1 forwards;
+            animation: html-progress 2s 1 forwards;
+  }
+  
+  .css {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+    -webkit-animation: css-progress 2s 1 forwards;
+            animation: css-progress 2s 1 forwards;
+  }
+  
+  .css::before {
+    -webkit-animation: css-progress 2s 1 forwards;
+            animation: css-progress 2s 1 forwards;
+  }
+  
+  .js {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+    -webkit-animation: js-progress 2s 1 forwards;
+            animation: js-progress 2s 1 forwards;
+  }
+  
+  .js::before {
+    -webkit-animation: js-progress 2s 1 forwards;
+            animation: js-progress 2s 1 forwards;
+  }   
+ progress {
+    visibility: hidden;
+    width: 0;
+    height:0;
+  }
+.moreProjects-btn{
+    height: 40px;
+    width: 160px;
+    background-color: aqua;
+    color: white;
+    border-radius: 10%;
+    margin-left: 45%;
+
+}
+  
+
+  /* About section Styling  */
+
+  .about{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 2vh;
+    background-color: rgb(11, 34, 42);  }
+  .myintro{
+    height: 30vh;
+    width: 100vw;
+    margin-top: 7vh;
+  }
+  .intro{
+    height:68vh ;
+    width: 55%;
+   margin: 0 7vw;
+    color: rgb(255, 255, 255);
+    float: left;
+  }
+  .mypic{
+    height: 44vh;
+    width: 35vh;
+    margin-top: 3vh;
+    margin-left: 9vw;
+    background-color: blue;
+    background-image: url(/img/Mypic.jpg);
+    background-size: cover;
+    border:  solid 2px aqua;
+    border-radius: 5%;
+   float: left;
+  }
+.About-deatils-btn{
+    height: 30px;
+    width: 110px;
+    /* border: solid 2px aqua; */
+    cursor: pointer;
+    border-radius: 20%;
+    margin-top: 20px;
+    margin-left: 35px;
+    color: black;
+    background-color: aquamarine;
+    box-shadow: #3498db;
+}
+.About-deatils-btn:hover{
+  border: none;
+  color: aqua;
+  background-color: rgb(76, 74, 74);
+}
+
+ /* CONTACT FORM SECTION STYLE              */
+.contact {
+    font-family: Arial, sans-serif;
+    height: 88vh;
+    width: 100vw;
+    background-color: rgb(11, 34, 42);
+    /* background-color: #f2f2f2; */
+}
+.contact-box{
+    /* background-color: yellowgreen; */
+    width: 500px;
+    margin: auto;
+    
+}
+form {
+ 
+    max-width: 400px;
+    margin: 0 auto;
+    /* background-color: burlywood; */
+}
+ input {
+    display: block;
+    height: 30px;
+    width: 340px;
+    margin-bottom: 10px;
+    background-color: rgb(103, 196, 225);
+    border: solid 2px rgb(0, 255, 153);
+}
+textarea{
+    display: block;
+    width: 340px;
+    margin-bottom: 30px;
+    background-color: rgb(103, 196, 225);
+    border: solid 2px rgb(0, 255, 153);
+}
+.submit-btn{
+    height: 30px;
+    width: 250px;
+    margin-left: 50px;
+    border-radius: 9px;
+    background-color: rgb(18, 78, 121);
+    color: aliceblue;
+}
+.submit-btn:hover{
+   background-color: rgb(56, 217, 217);
+   color: rgb(31, 32, 33);
+   font-weight: 700;
+   cursor: pointer;
+}
+
+label{
+    color: rgb(102, 247, 199);
+}
+.contact-heading{
+    color: aqua;
+}
+.footer{
+    height: 6vh;
+    width: 100vw;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.gap{
+     margin-top: 15vh;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+/* certificates */
+
+.headinng{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: aqua;
+    margin-top: 10vh;
+}
